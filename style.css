@@ -124,12 +124,13 @@ form {
 .input-field {
     width: 400px;
     height: 40px;
-    margin-top: 20px;
+    margin-top: 30px;
     padding-left: 10px;
     padding-right: 10px;
     border: 2px solid #777;
     border-radius: 30px;
     outline: none;
+    line-height: 40px;
 }
 
 .btn {
