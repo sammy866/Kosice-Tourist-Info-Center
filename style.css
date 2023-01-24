@@ -146,31 +146,73 @@ form {
     padding-left: 10px;
     padding-right: 10px;
     transition: 0.5s;
-    border-radius: 30px;
-}
-
-.btn:hover {
+    border-radius: 50px;
     background: orange;
-    letter-spacing: 0.25em;
-    box-shadow: 0 0 35px orange;
-    animation: 0.5s forwards niceBtn;
 }
 
-.button:focus {
-    width: 3rem;
-    height: 3rem;
+button {
+    width: 200px;
+    height: 50px;
+    background: none;
+    border: 2px solid yellow;
+    border-radius: 100px;
+    cursor: pointer;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    transition: 0.5s;
 }
 
-@keyframes niceBtn {
-    0% {
-        padding: 0px;
-        transform: rotate(0deg);
-        font-size: 12px;
+button:hover {
+    font-size: 14px;
+    box-shadow: 0px 0px 35px orange!important;
+}
+
+button:focus {
+    outline: none;
+    border-left: 2px solid yellow;
+    border: 2px solid yellow;
+    animation: spin 2s 500ms forwards;
+}
+
+span, svg {
+    position: absolute;
+    color: yellow;
+    fill: transparent;
+    font-size: 20px;
+}
+
+button:focus span {
+    color: transparent;
+}
+
+button:focus svg {
+    animation: check 500ms 2500ms forwards;
+}
+
+@keyframes spin{
+    50%{
+        border: 2px solid transparent;
+        border-left: 2px solid black;
+        border-right: 2px solid black;
     }
     100% {
-        padding: 10px;
-        transform: rotate(360deg);
-        font-size: 12px;
+        transform: rotate(1080deg);
+        border: 2px solid black;
+        width: 50px;
+        
+    }
+}
+
+@keyframes check {
+    to {
+        fill: yellow;
+    }
+}
+
+@keyframes circle {
+    to {
+        border: 2px solid yellow;
     }
 }
 
@@ -207,19 +249,16 @@ form {
     text-align: center;
     font-size: 1.5em;
     margin-bottom: 5px;
-    border-radius: 10px;
+    border-radius: 50px;
     border: 2px solid #777;
     transition: 0.5s;
+    background-color: orange;
 }
 
 .subscribe:hover {
     background: orange;
     letter-spacing: 0.25em;
     box-shadow: 0px 0px 35px orange!important;
-}
-
-.subscribe:active {
-    transform: scale(0.95);
 }
 
 /*Picture row for other pages*/
