@@ -9,6 +9,7 @@ body {
     background-color: darkorange;
 }
 
+/*Navigation Bar*/
 .nav-bar {
     border: 1px solid black;
     border-radius: 35px;
@@ -48,6 +49,7 @@ body {
     font-size: 2em;
 }
 
+/*Home-page picture row*/
 .row {
     display: flex;
     gap: 5px;
@@ -83,6 +85,7 @@ body {
     padding: 5px;
 }
 
+/*Bucket-list*/
 .bucket-list {
     background-color: yellow;
     width: max-content;
@@ -105,6 +108,7 @@ body {
     margin-right: 10px;
 }
 
+/*Contact Page*/
 .contact-box {
     width: 500px;
     background-color: #fff;
@@ -133,6 +137,7 @@ form {
     line-height: 40px;
 }
 
+/*Button's*/
 .btn {
     width: 400px;
     height: 40px;
@@ -148,11 +153,25 @@ form {
     background: orange;
     letter-spacing: 0.25em;
     box-shadow: 0 0 35px orange;
+    animation: 0.5s forwards niceBtn;
 }
 
 .button:focus {
     width: 3rem;
     height: 3rem;
+}
+
+@keyframes niceBtn {
+    0% {
+        padding: 0px;
+        transform: rotate(0deg);
+        font-size: 12px;
+    }
+    100% {
+        padding: 10px;
+        transform: rotate(360deg);
+        font-size: 12px;
+    }
 }
 
 .map img {
@@ -166,6 +185,7 @@ form {
     float: right;
 }
 
+/*Subscribe to News*/
 .newsletter {
     background-color: yellow;
     padding: 5px 10px;
@@ -198,15 +218,11 @@ form {
     box-shadow: 0px 0px 35px orange!important;
 }
 
-.saint-martin {
-   
-    max-height: 500px;
-    max-width: 500px;
-    text-align: center;
-    padding-bottom: 7.5px;
-    display: flex;
+.subscribe:active {
+    transform: scale(0.95);
 }
 
+/*Picture row for other pages*/
 .row2 {
     display: flex;
     max-width: 1500px;
@@ -238,7 +254,6 @@ form {
 .row2 .column2 a:link {
     text-decoration: none;
 }
-
 
 
 
