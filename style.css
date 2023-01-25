@@ -54,7 +54,7 @@ body {
 .heading {
     text-align: center;
     padding-top: 100px;
-    margin-bottom: 300px;
+    margin-bottom: 50px;
     background-image: url("https://eitrawmaterials.eu/wp-content/uploads/2018/02/kosice-slovakia-day-54209392.jpg");
     min-height: 750px;
 }
@@ -78,7 +78,6 @@ body {
     position: absolute;
     top: 90%;
     left: 48%;
-    color: red;
 }
 
 /*Home-page picture row*/
@@ -86,6 +85,7 @@ body {
     display: flex;
     gap: 5px;
     position: relative;
+    flex-wrap: nowrap;
 }
 
 .row .column img {
@@ -115,20 +115,22 @@ body {
     margin-left: 19px;
     border-radius: 5px;
     padding: 5px;
+    flex-wrap: nowrap;
 }
 
 /*Bucket-list*/
 .bucket-list {
     background-color: yellow;
-    width: max-content;
-    margin-left: auto;
-    margin-right: auto;
+    width: min-content;
+    margin-left: 300px;
+    padding-right: 15px;
     border-radius: 10px;
+    padding-top: 1px;
 }
 
 .bucket-list h3 {
     margin-left: 10px;
-    margin-right: 10px;
+    margin-right: 20px;
 }
 
 .bucket-list iframe {
@@ -137,7 +139,17 @@ body {
 }
 
 .map2 {
-    margin-right: 10px;
+    margin-right: 200px;
+    margin-top: 20px;
+    background-color: yellow;
+    padding: 10px;
+    border-radius: 10px;
+}
+
+.map2:hover {
+    transition: .5s;
+    transform: scale(0.95);
+    box-shadow: 0 0 250px yellow;
 }
 
 /*Contact Page*/
@@ -305,15 +317,17 @@ button:focus svg {
     display: flex;
     max-width: 1500px;
     padding-bottom: 10px;
+    flex-wrap: nowrap;
 }
 
 .row2 .column2 img {
     max-width: 400px;
     max-height: 256px;
-    display: block;
+    display: flex;
     margin: auto;
     position: relative;
     border-radius: 10px;
+    flex-wrap: nowrap;
 }
 
 .row2 .column2:hover {
@@ -326,6 +340,7 @@ button:focus svg {
     background-color: yellow;
     border-radius: 10px;
     text-align: center;
+    flex-wrap: nowrap;
     
 }
 
