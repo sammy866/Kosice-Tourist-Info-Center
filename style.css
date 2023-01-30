@@ -2,30 +2,30 @@
     margin-left: auto;
     margin-right: auto;
     color: black;
-    font-family: 'PT Sans', sans-serif;
+    font-family: 'Oswald', sans-serif;
+    
 }
 
 body {
-    background-color: darkorange;
+    background-color: #FDFFF2FF;
 }
-
 /*Navigation Bar*/
 .nav-bar {
-    border: 1px solid black;
-    border-radius: 35px;
     text-align: center;
-    background-color: lightgrey;
-    max-width: fit-content;
-    margin-top: 0;
-    padding-right: 25px;
+    justify-content: center;
+    border-bottom: 2px solid black;
     padding-bottom: 10px;
-    padding-top: 10px;
+    margin-bottom: 0px;
+    margin-top: 0px;
+    padding-top: 0px;
 }
 
 .nav-bar li {
     display: inline;
-    padding-inline-start: 30px;
+    padding-left: 10px;
     text-align: center;
+    margin: 10px;
+    padding: 10px;
 }
 
 .nav-bar li a {
@@ -33,36 +33,46 @@ body {
 }
 
 .nav-bar li a:hover {
-    color: yellow;
+    background-color: yellow;
     text-decoration: underline;
-    font-size: 1.5em;
+    font-size: 1.7em;
     transition: 0.5s;
-    box-shadow: 0 0 100px orange;
+    box-shadow: 0 0 50px yellow;
+    padding: 10px;
+    border-radius: 20px;
 }
 
 .nav-bar .selected {
-    color: yellow;
+    background-color: yellow;
+    border-radius: 20px;
+    box-shadow: 0px 0px 50px yellow;
 }
 
 .Title {
-    padding-right: 100px;
+    margin: 0;
     font-size: 2em;
+}
+
+.menu {
+    padding-left: 00px;
+    display: inline;
+    margin-left: 780px;
 }
 
 /*Home Heading*/
 
 .heading {
     text-align: center;
-    padding-top: 100px;
+    padding-top: 20px;
     margin-bottom: 50px;
     background-image: url("https://eitrawmaterials.eu/wp-content/uploads/2018/02/kosice-slovakia-day-54209392.jpg");
-    min-height: 750px;
+    min-height: 780px;
 }
 
 .heading h1, h2 {
-    margin-top: 120px;
     color: white;
-    padding: 0px;
+    padding-top: 120px;
+    line-height: 0;
 }
 
 .heading h1 {
@@ -77,7 +87,7 @@ body {
 
 .scroll-down {
     position: absolute;
-    bottom: 40px;
+    top: 90%;
     left: 50%;
     width: 80px;
     height: 80px;
@@ -92,10 +102,10 @@ body {
     display: block;
     width: 100%;
     height: 100%;
-    border-bottom: 5px solid #fff;
-    border-right: 5px solid #fff;
+    border-bottom: 10px solid #fff;
+    border-right: 10px solid #fff;
     border-radius: 10px;
-    animation: animate 1.5s linear infinite;
+    animation: animate 3s linear infinite;
     opacity: 0;
 }
 
@@ -105,16 +115,18 @@ body {
 
 .scroll-down span:nth-child(2) {
     transform: translate(0px, 0px);
+    animation-delay: .5s;
 }
 
 .scroll-down span:nth-child(3) {
     transform: translate(30px, 30px);
+    animation-delay: 1s;
 }
 
 @keyframes animate {
     25% {
-        top: -5px;
-        left: -5px;
+        top: -10px;
+        left: -10px;
         opacity: 0;
     }
     50% {
@@ -146,7 +158,6 @@ body {
 .row .column img {
     max-width: 400px;
     max-height: 256px;
-    display: block;
     margin: auto;
     position: relative;
     border-radius: 10px;
@@ -155,7 +166,7 @@ body {
 .row .column img:hover {
     transform: scale(0.9);
     transition: .5s;
-    box-shadow: 0 0 400px yellow;
+    box-shadow: 0 0 50px yellow;
 }
 
 .thermal, .cathedral, .trail-txt, .ski {
@@ -187,6 +198,7 @@ body {
     padding-top: 1px;
     height: max-content;
     font-size: 20px;
+    box-shadow: 15px 15px 100px black;
 }
 
 .bucket-list h3 {
@@ -201,24 +213,28 @@ body {
 
 .map2 {
     margin-top: 70px;
-    background-color: yellow;
-    padding: 10px;
-    border-radius: 10px;
     margin-left: 100px;
+    border: 10px solid yellow;
+    background-color: yellow;
+    border-radius: 10px;
+    padding-top: 5px;
+    padding-left: 5px;
+    padding-right: 5px;
     height: max-content;
+    box-shadow: 15px 15px 100px black;
 }
 
 /*Contact Page*/
 .contact-box {
     width: 500px;
-    background-color: #fff;
-    box-shadow: #777;
+    background-color: yellow;
+    box-shadow: 20px 10px 25px black;
     top: 50%;
     left: 50%;
     transform: translate(-50%, -50%);
     position: absolute;
     border-radius: 50px;
-    margin-top: 40px;
+    margin-top: 100px;
 }
 
 form {
@@ -233,7 +249,6 @@ form {
     padding-right: 10px;
     border: 2px solid #777;
     border-radius: 30px;
-    outline: none;
     line-height: 40px;
 }
 
@@ -248,19 +263,21 @@ form {
     transition: 0.5s;
     border-radius: 50px;
     background: orange;
+    
 }
 
 button {
     width: 200px;
     height: 50px;
     background: none;
-    border: 2px solid yellow;
+    border: 2px solid black;
     border-radius: 100px;
     cursor: pointer;
     display: flex;
     align-items: center;
     justify-content: center;
     transition: 0.5s;
+    color: black;
 }
 
 button:hover {
@@ -277,7 +294,7 @@ button:focus {
 
 span, svg {
     position: absolute;
-    color: yellow;
+    color: black;
     fill: transparent;
     font-size: 20px;
 }
@@ -318,7 +335,7 @@ button:focus svg {
 
 .map img {
     float:inherit;
-    opacity: 50%;
+    opacity: 100%;
     width: 500px;
     border-radius: 50px;
 }
@@ -356,7 +373,7 @@ button:focus svg {
     font-size: 1.5em;
     margin-bottom: 5px;
     border-radius: 50px;
-    border: 2px solid #777;
+    border: 2px solid black;
     transition: 0.5s;
     background-color: orange;
     height: 30px;
@@ -374,6 +391,8 @@ button:focus svg {
     max-width: 1500px;
     padding-bottom: 10px;
     flex-wrap: nowrap;
+    gap: 10px;
+    padding-top: 15px;
 }
 
 .row2 .column2 img {
@@ -389,7 +408,7 @@ button:focus svg {
 .row2 .column2:hover {
     transform: scale(0.9);
     transition: .5s;
-    box-shadow: 0 0 400px yellow;
+    box-shadow: 0 0 100px yellow;
 }
 
 .row2 .column2 {
