@@ -73,11 +73,66 @@ body {
     font-size: 75px;
 }
 
+/*scrolldown animation*/
+
 .scroll-down {
-    display: flex;
     position: absolute;
-    top: 90%;
-    left: 48%;
+    bottom: 40px;
+    left: 50%;
+    width: 80px;
+    height: 80px;
+    transform: translateY(-80px) translateX(-50%)
+        rotate(45deg);
+}
+
+.scroll-down span {
+    position: absolute;
+    top: 0;
+    left: 0;
+    display: block;
+    width: 100%;
+    height: 100%;
+    border-bottom: 5px solid #fff;
+    border-right: 5px solid #fff;
+    border-radius: 10px;
+    animation: animate 1.5s linear infinite;
+    opacity: 0;
+}
+
+.scroll-down span:nth-child(1) {
+    transform: translate(-30px, -30px);
+}
+
+.scroll-down span:nth-child(2) {
+    transform: translate(0px, 0px);
+}
+
+.scroll-down span:nth-child(3) {
+    transform: translate(30px, 30px);
+}
+
+@keyframes animate {
+    25% {
+        top: -5px;
+        left: -5px;
+        opacity: 0;
+    }
+    50% {
+        top: 0px;
+        left: 0px;
+        opacity: 1;
+    }
+    75% {
+        top: 0px;
+        left: 0px;
+        opacity: 1;
+    }
+    
+    100% {
+        top: 10px;
+        left: 10px;
+        opacity: 0;
+    }
 }
 
 /*Home-page picture row*/
@@ -119,13 +174,19 @@ body {
 }
 
 /*Bucket-list*/
+.container2{
+    display: flex;
+    flex-wrap: wrap;
+}
 .bucket-list {
     background-color: yellow;
     width: min-content;
-    margin-left: 300px;
-    padding-right: 15px;
+    margin-left: 100px;
+    padding-right: 18px;
     border-radius: 10px;
     padding-top: 1px;
+    height: max-content;
+    font-size: 20px;
 }
 
 .bucket-list h3 {
@@ -139,17 +200,12 @@ body {
 }
 
 .map2 {
-    margin-right: 200px;
-    margin-top: 20px;
+    margin-top: 70px;
     background-color: yellow;
     padding: 10px;
     border-radius: 10px;
-}
-
-.map2:hover {
-    transition: .5s;
-    transform: scale(0.95);
-    box-shadow: 0 0 250px yellow;
+    margin-left: 100px;
+    height: max-content;
 }
 
 /*Contact Page*/
