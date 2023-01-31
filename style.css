@@ -263,7 +263,7 @@ form {
     padding-right: 10px;
     transition: 0.5s;
     border-radius: 50px;
-    background: orange;
+    background: rgb(251, 255, 191);
     
 }
 
@@ -283,13 +283,14 @@ button {
 
 button:hover {
     font-size: 14px;
-    box-shadow: 0px 0px 35px orange!important;
+    box-shadow: 0px 0px 35px yellow;
+    background: rgb(191, 201, 197);
+    letter-spacing: 0.5em;
 }
 
 button:focus {
     outline: none;
-    border-left: 2px solid yellow;
-    border: 2px solid yellow;
+    border: 2px solid black;
     animation: spin 2s 500ms forwards;
 }
 
@@ -403,6 +404,10 @@ button:focus svg {
     padding-top: 15px;
 }
 
+.row2 p {
+    margin-bottom: 10px;
+}
+
 .row2 .column2 img {
     max-width: 400px;
     max-height: 256px;
@@ -435,9 +440,6 @@ button:focus svg {
 
 .intro {
     min-height: 780px;
-}
-
-.intro {
     padding-top: 20px;
     margin-bottom: 50px;
     background-image: url("https://live.staticflickr.com/4239/34994043713_d519cf754f_b.jpg");
@@ -455,4 +457,65 @@ button:focus svg {
     margin-top: 250px;
     font-size: 40px;
 }
+
+.intro-winter {
+    min-height: 780px;
+    padding-top: 20px;
+    margin-bottom: 50px;
+    background-image: url("https://live.staticflickr.com/7879/32934322758_28dc7a4eab_b.jpg");
+    min-height: 780px;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+.intro-winter h1 {
+    padding-top: 50px;
+    text-align: center;
+    width: 1000px;
+    color: #fff;
+    border-radius: 10px;
+    margin-top: 250px;
+    font-size: 40px;
+}
+
+.intro-church {
+    min-height: 780px;
+    padding-top: 20px;
+    margin-bottom: 50px;
+    background-image: url("https://medievalheritage.eu/wp-content/uploads/2017/09/Kosice-Dom-Svatej-Alzbety-04.jpg");
+    min-height: 780px;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+.intro-church h1 {
+    padding-top: 50px;
+    text-align: center;
+    width: 1000px;
+    color: #fff;
+    border-radius: 10px;
+    margin-top: 250px;
+    font-size: 40px;
+}
+
+.intro-trails {
+    min-height: 780px;
+    padding-top: 20px;
+    margin-bottom: 50px;
+    background-image: url("https://www.ke-cy.sk/asset/photos/galleries/rychly-pohlad-13-11-2019-08-51-23/original/1573635080_photo.jpg");
+    min-height: 780px;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+.intro-trails h1 {
+    padding-top: 50px;
+    text-align: center;
+    width: 1000px;
+    color: #fff;
+    border-radius: 10px;
+    margin-top: 250px;
+    font-size: 40px;
+}
+
 
