@@ -5,24 +5,38 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <link rel="stylesheet" href="style.css" />
-    <link href="https://fonts.googleapis.com/css2?family=Oswald:wght@400;700&display=swap" rel="stylesheet">
+    <link
+      href="https://fonts.googleapis.com/css2?family=Oswald:wght@400;700&display=swap"
+      rel="stylesheet"
+    />
     <title>Home</title>
   </head>
   <body>
     <!--Navigation(Top Of Site)-->
-    <ul class="nav-bar">
-      <li class="Title"><img src="large.png" alt="logo" height="100px"></li>
-      <div class="menu">
-      <li class="selected">Home</li>
-      <li class="Aquatic"><a href="aquatic.html">Aquatic adventures</a></li>
-      <li class="Winter"><a href="winter.html">Winter activites</a></li>
-      <li class="Churches">
-        <a href="church.html">Churches and Cathedrals</a>
-      </li>
-      <li class="Trails"><a href="trails.html">Natural Trails</a></li>
-      <li class="Contact-us"><a href="contact.html">Contact Us</a></li></div>
-    </ul>
-    <div class="heading"><h2>Its time for <br><h1>Adventure</h1></h2></div>
+    <header>
+      <ul class="nav-bar">
+        <div class="Title">
+          <a href="index.html">
+            <img src="large.png" alt="logo" height="175px"
+          /></a>
+        </div>
+        <div class="menu">
+          <li class="Aquatic"><a href="aquatic.html">Aquatic adventures</a></li>
+          <li class="Winter"><a href="winter.html">Winter activites</a></li>
+          <li class="Churches">
+            <a href="church.html">Churches and Cathedrals</a>
+          </li>
+          <li class="Trails"><a href="trails.html">Natural Trails</a></li>
+          <li class="Contact-us"><a href="contact.html">Contact Us</a></li>
+        </div>
+      </ul>
+      <div class="heading">
+        <h2>
+          Its time for <br />
+          <h1>Adventure</h1>
+        </h2>
+      </div>
+    </header>
     <!--Scroll down animation-->
     <div class="scroll-down">
       <span></span>
@@ -30,94 +44,131 @@
       <span></span>
     </div>
     <!--Picture Row-->
-    <div class="row">
-      <div class="column">
-        <a href="aquatic.html">
-        <img
-          src="https://live.staticflickr.com/4284/35763397646_4a5dfe27e1_b.jpg"
-          alt="Thermal Water Park"
-          width="100%"
-        />
-        <h3 class="thermal">Thermal ŠÍRAVA SPA RESORT</h3></a>
+    <main>
+      <div class="row">
+        <div class="column">
+          <a href="aquatic.html">
+            <img
+              src="https://live.staticflickr.com/4284/35763397646_4a5dfe27e1_b.jpg"
+              alt="Thermal Water Park"
+              width="100%"
+            />
+            <h3 class="thermal">Thermal ŠÍRAVA SPA RESORT</h3></a
+          >
+        </div>
+        <div class="column">
+          <a href="winter.html">
+            <img
+              src="https://live.staticflickr.com/7879/32934322758_28dc7a4eab_b.jpg"
+              alt="Jahodna Ski Resort"
+              width="100%"
+            />
+            <h3 class="ski">Ski resort of Jahodná</h3></a
+          >
+        </div>
+        <div class="column">
+          <a href="church.html">
+            <img
+              src="https://live.staticflickr.com/4824/46104592005_ce3fede3ab_b.jpg"
+              alt="St Elisabeth Cathedral"
+              width="100%"
+            />
+            <h3 class="cathedral">St Elisabeth Cathedral</h3>
+          </a>
+        </div>
+        <div class="column">
+          <a href="trails.html">
+            <img
+              src="https://traveltipy.com/wp-content/uploads/2016/04/Velky-sokol-gorge-Slovak-Paradise-Kosice-region-Slovakia-1024x768.jpg"
+              alt="Trails"
+              width="100%"
+            />
+            <h3 class="trail-txt">Rumanka - Suchá Belá</h3></a
+          >
+        </div>
       </div>
-      <div class="column">
-        <a href="winter.html">
-          <img
-            src="https://live.staticflickr.com/7879/32934322758_28dc7a4eab_b.jpg"
-            alt="Jahodna Ski Resort"
-            width="100%"
-          />
-          <h3 class="ski">Ski resort of Jahodná</h3></a
-        >
-      </div>
-      <div class="column">
-        <a href="church.html">
-        <img
-          src="https://live.staticflickr.com/4824/46104592005_ce3fede3ab_b.jpg"
-          alt="St Elisabeth Cathedral"
-          width="100%"
-        />
-        <h3 class="cathedral">St Elisabeth Cathedral</h3>
-      </div></a>
-      <div class="column">
-        <a href="trails.html">
-        <img
-          src="https://traveltipy.com/wp-content/uploads/2016/04/Velky-sokol-gorge-Slovak-Paradise-Kosice-region-Slovakia-1024x768.jpg"
-          alt="Trails"
-          width="100%"
-        />
-        <h3 class="trail-txt">Rumanka - Suchá Belá</h3></a>
-      </div>
-    </div>
-    <!--Bucket List and Map-->
-    <br><br><div class="container2">
-      <div class="map2">
-        <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d168538.53259340808!2d21.09911032652109!3d48.69755655572062!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x473ee01b67c6957b%3A0x400f7d1c6978bd0!2sKo%C5%A1ice%2C%20Slovakia!5e0!3m2!1sen!2sie!4v1675071003643!5m2!1sen!2sie" 
-        width="746" 
-        height="450" 
-        style="border:0;" 
-        allowfullscreen="" 
-        loading="lazy" 
-        referrerpolicy="no-referrer-when-downgrade">
-      </iframe></div>
-      <div class="bucket-list">
-        <h3>Have you ever been bored at home? Have you ever wanted to explore the world? We offer you a list of the many wild adventures in Kosice that will start you ticking off your bucket list</h3>
-        <iframe 
-        width="728" 
-        height="409.5" 
-        src="https://www.youtube.com/embed/LM2trdBo9mg" 
-        title="YouTube video player" 
-        frameborder="0" 
-        allow="accelerometer; 
+      <!--Bucket List and Map-->
+      <br /><br />
+      <div class="container2">
+        <div class="map2">
+          <iframe
+            src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d168538.53259340808!2d21.09911032652109!3d48.69755655572062!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x473ee01b67c6957b%3A0x400f7d1c6978bd0!2sKo%C5%A1ice%2C%20Slovakia!5e0!3m2!1sen!2sie!4v1675071003643!5m2!1sen!2sie"
+            width="746"
+            height="450"
+            style="border: 0"
+            allowfullscreen=""
+            loading="lazy"
+            referrerpolicy="no-referrer-when-downgrade"
+          >
+          </iframe>
+        </div>
+        <div class="bucket-list">
+          <h3>
+            Have you ever been bored at home? Have you ever wanted to explore
+            the world? We offer you a list of the many wild adventures in Kosice
+            that will start you ticking off your bucket list
+          </h3>
+          <iframe
+            width="728"
+            height="409.5"
+            src="https://www.youtube.com/embed/LM2trdBo9mg"
+            title="YouTube video player"
+            frameborder="0"
+            allow="accelerometer; 
         autoplay; 
         clipboard-write; 
         encrypted-media; 
         gyroscope; 
         picture-in-picture; 
-        web-share" 
-        allowfullscreen>
-        Sorry, your browser does not support embed video</iframe>
-      </div></div>
+        web-share"
+            allowfullscreen
+          >
+            Sorry, your browser does not support embed video</iframe
+          >
+        </div>
+      </div>
+    </main>
     <!--Newsletter-->
-    <div class="newsletter">
-      <div class="social-media">
-        <p>info@kosice.com</p>
-      <img src="https://cdn-icons-png.flaticon.com/512/44/44646.png" alt="" width="50px">
-      <img src="https://cdn-icons-png.flaticon.com/512/1384/1384017.png" alt="" width="50px">
-      <img src="https://cdn-icons-png.flaticon.com/512/1400/1400829.png" alt="" width="50px">
-      </div><p>Subscribe to our newsletter!
-        <input type="text" 
-          class="input" 
-          placeholder="Your Email">
-      </p>
-    <button type="button" class="subscribe">
-      <span>Subscribe</span>
-      <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24">
-        <path d="M0 11c2.761.575 6.312 1.688 9 3.438 3.157-4.23
+    <footer>
+      <div class="newsletter">
+        <div class="social-media">
+          <p>info@kosice.com</p>
+          <img
+            src="https://cdn-icons-png.flaticon.com/512/44/44646.png"
+            alt=""
+            width="50px"
+          />
+          <img
+            src="https://cdn-icons-png.flaticon.com/512/1384/1384017.png"
+            alt=""
+            width="50px"
+          />
+          <img
+            src="https://cdn-icons-png.flaticon.com/512/1400/1400829.png"
+            alt=""
+            width="50px"
+          />
+        </div>
+        <p>
+          Subscribe to our newsletter!
+          <input type="text" class="input" placeholder="Your Email" />
+        </p>
+        <button type="button" class="subscribe">
+          <span>Subscribe</span>
+          <svg
+            xmlns="http://www.w3.org/2000/svg"
+            width="24"
+            height="24"
+            viewBox="0 0 24 24"
+          >
+            <path
+              d="M0 11c2.761.575 6.312 1.688 9 3.438 3.157-4.23
         8.828-8.187 15-11.438-5.861 5.775-10.711
-        12.328-14 18.917-2.651-3.766-5.547-7.271-10-10.917z"></path>
-      </svg>
-    </button>
-    </div>
+        12.328-14 18.917-2.651-3.766-5.547-7.271-10-10.917z"
+            ></path>
+          </svg>
+        </button>
+      </div>
+    </footer>
   </body>
 </html>

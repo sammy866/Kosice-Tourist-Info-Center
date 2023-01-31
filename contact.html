@@ -4,59 +4,103 @@
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <link href="https://fonts.googleapis.com/css2?family=Oswald:wght@400;700&display=swap" rel="stylesheet">
+    <link
+      href="https://fonts.googleapis.com/css2?family=Oswald:wght@400;700&display=swap"
+      rel="stylesheet"
+    />
     <link rel="stylesheet" href="style.css" />
     <title>Contact Us</title>
   </head>
-    </body>
+  <body>
     <!--Navigation(Top Of Site)-->
-    <ul class="nav-bar">
-      <li class="Title"><img src="large.png" alt="logo" height="100px"></li>
-      <div class="menu">
-      <li class="Home"><a href="index.html">Home</a></li>
-      <li class="Aquatic"><a href="aquatic.html">Aquatic adventures</a></li>
-      <li class="Winter"><a href="winter.html">Winter activites</a></li>
-      <li class="Churches">
-        <a href="church.html">Churches and Cathedrals</a>
-      </li>
-      <li class="Trails"><a href="trails.html">Natural Trails</a></li>
-      <li class="selected">Contact Us</li></div>
-    </ul>
-    <div class="contact-box">
-      <form>
-        <input type="text" 
-          input required id="name" 
-          class="input-field" 
-          placeholder="Your Name" />
-        <input type="text" 
-          input required id="email" 
-          class="input-field" 
-          placeholder="Your Email" />
-        <input type="text" 
-          input required id="subject" 
-          class="input-field" 
-          placeholder="Subject" />
-        <textarea
-          type="text"
-          input required id="message"
-          class="input-field"
-          placeholder="Your Message"
-        ></textarea>
-        <button type="submit" 
-            input required id="email" 
-            input required id="name"
-            input required id="message"
-            input required id="subject"
-            class="btn">
-          <span>Send</span>
-          <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24">
-            <path d="M0 11c2.761.575 6.312 1.688 9 3.438 3.157-4.23
+    <header>
+      <ul class="nav-bar">
+        <div class="Title">
+          <a href="index.html">
+            <img src="large.png" alt="logo" height="175px"
+          /></a>
+        </div>
+        <div class="menu">
+          <li class="Aquatic"><a href="aquatic.html">Aquatic adventures</a></li>
+          <li class="Winter"><a href="winter.html">Winter activites</a></li>
+          <li class="Churches">
+            <a href="church.html">Churches and Cathedrals</a>
+          </li>
+          <li class="Trails"><a href="trails.html">Natural Trails</a></li>
+          <li class="selected">Contact Us</li>
+        </div>
+      </ul>
+    </header>
+    <main>
+      <div class="contact-box">
+        <form>
+          <input
+            type="text"
+            input
+            required
+            id="name"
+            class="input-field"
+            placeholder="Your Name"
+          />
+          <input
+            type="text"
+            input
+            required
+            id="email"
+            class="input-field"
+            placeholder="Your Email"
+          />
+          <input
+            type="text"
+            input
+            required
+            id="subject"
+            class="input-field"
+            placeholder="Subject"
+          />
+          <textarea
+            type="text"
+            input
+            required
+            id="message"
+            class="input-field"
+            placeholder="Your Message"
+          ></textarea>
+          <button
+            type="submit"
+            input
+            required
+            id="email"
+            input
+            required
+            id="name"
+            input
+            required
+            id="message"
+            input
+            required
+            id="subject"
+            class="btn"
+          >
+            <span>Send</span>
+            <svg
+              xmlns="http://www.w3.org/2000/svg"
+              width="24"
+              height="24"
+              viewBox="0 0 24 24"
+            >
+              <path
+                d="M0 11c2.761.575 6.312 1.688 9 3.438 3.157-4.23
             8.828-8.187 15-11.438-5.861 5.775-10.711
-            12.328-14 18.917-2.651-3.766-5.547-7.271-10-10.917z"></path> 
-        </button>
-      </form>
-      <div class="contact-logo">
-        <img src="large.png" alt="kosice-map">
+            12.328-14 18.917-2.651-3.766-5.547-7.271-10-10.917z"
+              ></path>
+            </svg>
+          </button>
+        </form>
+        <div class="contact-logo">
+          <img src="large.png" alt="kosice-map" />
+        </div>
       </div>
+    </main>
   </body>
 </html>
