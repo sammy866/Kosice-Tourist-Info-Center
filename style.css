@@ -204,6 +204,7 @@ body {
 .bucket-list h3 {
     margin-left: 10px;
     margin-right: 20px;
+    margin-top: 5px;
 }
 
 .bucket-list iframe {
