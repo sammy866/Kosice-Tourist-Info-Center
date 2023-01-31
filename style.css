@@ -204,7 +204,7 @@ body {
 .bucket-list h3 {
     margin-left: 10px;
     margin-right: 20px;
-    margin-top: 5px;
+    margin-top: 0px;
 }
 
 .bucket-list iframe {
@@ -213,7 +213,7 @@ body {
 }
 
 .map2 {
-    margin-top: 70px;
+    margin-top: 30px;
     margin-left: 100px;
     border: 10px solid yellow;
     background-color: yellow;
@@ -223,7 +223,6 @@ body {
     padding-right: 5px;
     height: max-content;
     box-shadow: 15px 15px 100px black;
-    margin-bottom: 10px;
 }
 
 /*Contact Page*/
