@@ -12,18 +12,77 @@ body {
 /*Navigation Bar*/
 
 .nav-bar {
-    text-align: center;
+    text-align: right;
     border-bottom: 2px solid black;
     padding-bottom: 20px;
     margin-bottom: 0px;
     margin-top: 0px;
+    padding-right: 50px;
 }
 
 .Title {
     width: 175px;
     margin-left: 10px!important;
-    margin-right: 55em!important;
-    float: left;
+    position: absolute;
+}
+
+@media screen and (max-width: 600px) {
+    div.Title {
+        margin-left: 0px!important;
+        width: 85%;
+        transition: .5s;
+    }
+    ul.nav-bar {
+        text-align: center;
+    }
+    div.heading {
+        min-height: 600px;
+    }
+    div.heading h1 {
+        font-size: 100px
+    }
+    div.heading h2{
+        font-size: 50px;
+    }
+    div.menu {
+        margin-top: 50px;
+        flex-direction: column;
+    }
+    div.scroll-down {
+        top: 105%;
+        width: 40px;
+        height: 40px;
+    }
+    div.row {
+        flex-direction: column;
+        transition: .5s;
+    }
+    h3.thermal {
+        top: 10%;
+    }
+    h3.ski {
+        top: 35%;
+    }
+    h3.trail-txt {
+        top: 85%;
+    }
+    div.container2 {
+        display: flexbox;
+        flex-direction: column;
+        margin-left: 0px!important;
+        position: relative;
+    }
+    div.map2 iframe {
+        position: relative;
+        transform: scale(.8);
+        margin-left: auto!important;
+        margin-right: auto!important;
+        max-width: 500px;
+    }
+    div.bucket-list {
+        transform: scale(.8);
+        padding-left: 0px!important;
+    }
 }
 
 .nav-bar li {
