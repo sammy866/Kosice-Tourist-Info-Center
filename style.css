@@ -26,7 +26,7 @@ body {
     position: absolute;
 }
 
-@media screen and (min-width: 425px) {
+@media screen and (max-width: 37.5em) {
     div.Title {
         margin-left: 0px!important;
         justify-content: center;
@@ -73,37 +73,38 @@ body {
         top: 85%;
     }
     div.container2 {
-        display: flex;
-        flex-direction: column;
-        margin-left: 0px!important;
         position: relative;
-        margin-bottom: 0px;
+        display: inline-flex;
+        transform: scale(.6);
+        width: 500px;
     }
     div.map2 {
-        display: flex;
+        display: inline-flex;
         justify-content: center;
-        transform: scale(.6);
-        max-width: 500px;
-        margin-left: -50px;
-        margin-top: 0px;
+        width: 500px;
+        margin-left: 0px!important;
+        margin-right: 0px!important;
+        margin-top: -250px;
+        margin-bottom: 10px;
     }
     div.bucket-list iframe {
-        max-width: 500px;
+        width: 500px;
         padding-right: 10px;
     }
     div.bucket-list {
-        max-width: 500px;
-        transform: scale(.6);
-        margin-left: -50px!important;
+        width: 500px;
+        margin-bottom: -10em;
+        margin-left: 0px!important;
         padding-right: 30px;
     }
     div.newsletter {
         padding-top: 100px;
-        padding-left: 30px;
+        padding-left: 15%;
+        margin-right: 0px!;
     }
     div.social-media {
         right: 32%;
-        bottom: -292%;
+        bottom: -240%;
     }
 }
 
