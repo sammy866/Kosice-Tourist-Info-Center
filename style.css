@@ -29,10 +29,11 @@ body {
 @media screen and (max-width: 600px) {
     div.Title {
         margin-left: 0px!important;
-        width: 85%;
+        width: 76%;
         transition: .5s;
     }
     ul.nav-bar {
+        padding-left: 70px;
         text-align: center;
     }
     div.heading {
@@ -67,21 +68,36 @@ body {
         top: 85%;
     }
     div.container2 {
-        display: flexbox;
+        display: flex;
         flex-direction: column;
         margin-left: 0px!important;
         position: relative;
+        
     }
-    div.map2 iframe {
-        position: relative;
+    div.map2 {
+        display: flex;
+        justify-content: center;
         transform: scale(.8);
-        margin-left: auto!important;
-        margin-right: auto!important;
+        max-width: 500px;
+        margin-left: 0px;
+        margin-top: 0px;
+    }
+    div.bucket-list iframe {
+        transform: scale(.8);
         max-width: 500px;
     }
     div.bucket-list {
+        max-width: 500px;
         transform: scale(.8);
-        padding-left: 0px!important;
+        margin-left: 0px;
+    }
+    div.newsletter {
+        padding-top: 100px;
+        padding-left: 50px;
+    }
+    div.social-media {
+        right: 35%;
+        bottom: -265%;
     }
 }
 
