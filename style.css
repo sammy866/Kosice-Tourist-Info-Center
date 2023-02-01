@@ -6,6 +6,12 @@
     margin-bottom: 0px;
 }
 
+@media screen and (max-width: 37.5em) {
+    * {
+        transition: .5s;
+    }
+}
+
 body {
     background-color: #FDFFF2FF;
 }
@@ -33,79 +39,7 @@ body {
         align-items: center;
         transition: .5s;
         display: inline-flex;
-    }
-    ul.nav-bar {
-        padding-left: 50px;
-        display: block;
-        align-items: center;
-        text-align: center;
-    }
-    div.heading {
-        min-height: 600px;
-    }
-    div.heading h1 {
-        font-size: 75px
-    }
-    div.heading h2{
-        font-size: 25px;
-    }
-    div.menu {
-        margin-top: 50px;
-        flex-direction: column;
-    }
-    div.scroll-down {
-        top: 110%;
-        width: 40px;
-        height: 40px;
-    }
-    div.row {
-        flex-direction: column;
-        transition: .5s;
-        max-width: 350px;
-    }
-    h3.thermal {
-        top: 10%;
-    }
-    h3.ski {
-        top: 35%;
-    }
-    h3.trail-txt {
-        top: 85%;
-    }
-    div.container2 {
-        position: relative;
-        display: inline-flex;
-        transform: scale(.6);
-        width: 500px;
-    }
-    div.map2 {
-        display: inline-flex;
-        justify-content: center;
-        width: 500px;
-        margin-left: 0px!important;
-        margin-right: 0px!important;
-        margin-top: -250px;
-        margin-bottom: 10px;
-    }
-    div.bucket-list iframe {
-        width: 500px;
-        padding-right: 10px;
-    }
-    div.bucket-list {
-        width: 500px;
-        margin-bottom: -10em;
-        margin-left: 0px!important;
-        padding-right: 30px;
-    }
-    div.newsletter {
-        padding-top: 100px;
-        padding-left: 15%;
-        margin-right: 0px!;
-    }
-    div.social-media {
-        right: 32%;
-        bottom: -240%;
-    }
+    } 
 }
 
 .nav-bar li {
@@ -126,6 +60,14 @@ body {
     padding: 10px;
     border-radius: 20px;
 }
+@media screen and (max-width: 37.5em) {
+    ul.nav-bar {
+        padding-left: 50px;
+        display: block;
+        align-items: center;
+        text-align: center;
+    }
+}
 
 .menu {
     display: inline-flex;
@@ -135,6 +77,14 @@ body {
     list-style-type: none;
 }
 
+@media screen and (max-width: 37.5em) {
+    div.menu {
+        margin-top: 90px;
+        flex-direction: column;
+    }
+}
+
+
 /*Home Heading*/
 
 .heading {
@@ -143,6 +93,12 @@ body {
     margin-bottom: 50px;
     background-image: url("https://eitrawmaterials.eu/wp-content/uploads/2018/02/kosice-slovakia-day-54209392.jpg");
     min-height: 780px;
+}
+
+@media screen and (max-width: 37.5em) {
+    div.heading {
+        min-height: 600px;
+    }
 }
 
 .heading h1, h2 {
@@ -155,8 +111,20 @@ body {
     font-size: 150px;
 }
 
+@media screen and (max-width:37.5em) {
+    div.heading h1 {
+        font-size: 75px
+    }
+}
+
 .heading h2 {
     font-size: 75px;
+}
+
+@media screen and (max-width: 37.5em) {
+    div.heading h2{
+        font-size: 25px;
+    }
 }
 
 /*scrolldown animation*/
@@ -169,6 +137,14 @@ body {
     height: 80px;
     transform: translateY(-80px) translateX(-50%)
         rotate(45deg);
+}
+
+@media screen and (max-width:37.5em) {
+    div.scroll-down {
+        top: 110%;
+        width: 40px;
+        height: 40px;
+    }
 }
 
 .scroll-down span {
@@ -231,6 +207,14 @@ body {
     flex-wrap: nowrap;
 }
 
+@media screen and (max-width: 37.5em) {
+    div.row {
+        flex-direction: column;
+        transition: .5s;
+        max-width: 350px;
+    }
+}
+
 .row .column img {
     max-width: 400px;
     max-height: 256px;
@@ -260,11 +244,33 @@ body {
     flex-wrap: nowrap;
 }
 
+@media screen and (max-width: 37.5em) {
+   h3.thermal {
+        top: 10%;
+    }
+    h3.ski {
+        top: 35%;
+    }
+    h3.trail-txt {
+        top: 85%;
+    } 
+}
 /*Bucket-list*/
 .container2{
     display: flex;
     flex-wrap: wrap;
 }
+
+@media screen and (max-width: 37.5em) {
+    div.container2 {
+        display: flex;
+        flex-direction: column;
+        transform: scale(.6);
+        max-width: 500px;
+        margin-left: 15px;
+    }
+}
+
 .bucket-list {
     background-color: yellow;
     width: min-content;
@@ -288,6 +294,19 @@ body {
     padding-bottom: 10px;
 }
 
+@media screen and (max-width:37.5em) {
+    div.bucket-list iframe {
+        width: 500px;
+        padding-right: 10px;
+    }
+    div.bucket-list {
+        width: 500px;
+        margin-bottom: -10em;
+        margin-left: 0px!important;
+        padding-right: 30px;
+    }
+}
+
 .map2 {
     margin-top: 30px;
     margin-left: 100px;
@@ -301,6 +320,21 @@ body {
     box-shadow: 15px 15px 100px black;
 }
 
+@media screen and (max-width: 37.5em) {
+    div.map2 {
+        display: inline-flex;
+        justify-content: center;
+        width: 500px;
+        margin-left: 0px!important;
+        margin-right: 0px!important;
+        margin-top: -250px;
+        margin-bottom: 10px;
+}
+}
+
+    
+    
+
 /*Contact Page*/
 .contact-box {
     width: 500px;
@@ -312,6 +346,12 @@ body {
     position: absolute;
     border-radius: 50px;
     margin-top: 100px;
+}
+
+@media screen and (max-width: 37.5em) {
+    div.contact-box {
+        top: 85%;
+    }
 }
 
 form {
@@ -422,13 +462,35 @@ button:focus svg {
 /*Subscribe to News*/
 .newsletter {
     background-color: rgb(191, 201, 197);
-    padding: 30px 20px;
+    padding: 30px 5%;
     margin-top: 30px;
     margin-bottom: 0px;
 }
 
 .newsletter p{
     font-size: 12px;
+}
+
+@media screen and (max-width:37.5em) {
+    div.newsletter {
+        margin-left: 0px!important;
+        margin-right: 0px!important;
+        padding-top: 0px;
+        display: flex;
+        flex-direction: column;
+        
+    }
+    div.newsletter p {
+        padding-top: 10px;
+        padding-left: 15%;
+        margin-right: 0px!important;
+        max-width: min-content;
+        text-align: center;
+        margin-left: 100px!important;
+        padding-left: 0px;
+        display: flex;
+        flex-direction: column;
+    }
 }
 
 .input {
@@ -438,6 +500,12 @@ button:focus svg {
     padding: 10px;
     margin-left: 10px;
     height: 15px;
+}
+
+@media screen and (max-width: 37.5em) {
+    input.input {
+        width: 250px;
+    }
 }
 
 .subscribe {
@@ -452,6 +520,12 @@ button:focus svg {
     margin-top: 10px;
 }
 
+@media screen and (max-width: 37.5em) {
+    button.subscribe {
+        margin-left: auto;
+    }
+}
+
 .subscribe:hover {
     background: rgb(191, 201, 197);
     letter-spacing: 0.25em;
@@ -460,8 +534,8 @@ button:focus svg {
 
 .social-media {
     text-align: center;
-    position: absolute;
-    right: 10%;
+    float: right;
+    padding-right: 5%;
     margin-top: -20px;
 }
 
@@ -469,6 +543,24 @@ button:focus svg {
     font-size: 20px;
     line-height: 40px;
 }
+
+@media screen and (max-width:37.5em) {
+    div.social-media {
+        display: flex!important;
+        margin-top: 0px!important;
+        align-items: center;
+        justify-content: center;
+        padding: 0px 100px;
+        width: max-content;
+    }
+    div.social-media p {
+        display: block;
+        padding-left: 0px;
+        margin-left: 0px!important;
+        width: max-content;
+    }
+}
+
 
 /*Picture row for other pages*/
 .row2 {
@@ -478,6 +570,14 @@ button:focus svg {
     flex-wrap: nowrap;
     gap: 10px;
     padding-top: 15px;
+}
+
+@media screen and (max-width: 37.5em) {
+    div.row2 {
+        flex-direction: column;
+        transition: .5s;
+        max-width: 400px;
+    }
 }
 
 .row2 p {
@@ -524,6 +624,12 @@ button:focus svg {
     background-size: cover;
 }
 
+@media screen and (max-width: 37.5em) {
+    div.intro {
+        min-height: 600px;
+    }
+}
+
 .intro h1 {
     padding-top: 50px;
     text-align: center;
@@ -532,6 +638,15 @@ button:focus svg {
     border-radius: 10px;
     margin-top: 250px;
     font-size: 40px;
+}
+
+@media screen and (max-width:37.5em) {
+    div.intro h1 {
+        font-size: 30px;
+        width: 500px;
+        margin-top: 0px;
+        color: black;
+    }
 }
 
 .intro-winter {
@@ -544,6 +659,12 @@ button:focus svg {
     background-size: cover;
 }
 
+@media screen and (max-width: 37.5em) {
+    div.intro-winter {
+        min-height: 600px;
+    }
+}
+
 .intro-winter h1 {
     padding-top: 50px;
     text-align: center;
@@ -552,6 +673,15 @@ button:focus svg {
     border-radius: 10px;
     margin-top: 250px;
     font-size: 40px;
+}
+
+@media screen and (max-width:37.5em) {
+    div.intro-winter h1 {
+        font-size: 30px;
+        width: 500px;
+        margin-top: 0px;
+        color: black;
+    }
 }
 
 .intro-church {
@@ -564,6 +694,12 @@ button:focus svg {
     background-size: cover;
 }
 
+@media screen and (max-width: 37.5em) {
+    div.intro-church {
+        min-height: 600px;
+    }
+}
+
 .intro-church h1 {
     padding-top: 50px;
     text-align: center;
@@ -572,6 +708,15 @@ button:focus svg {
     border-radius: 10px;
     margin-top: 250px;
     font-size: 40px;
+}
+
+@media screen and (max-width:37.5em) {
+    div.intro-church h1 {
+        font-size: 30px;
+        width: 500px;
+        margin-top: 0px;
+        color: white;
+    }
 }
 
 .intro-trails {
@@ -584,6 +729,14 @@ button:focus svg {
     background-size: cover;
 }
 
+@media screen and (max-width: 37.5em) {
+    div.intro-trails {
+        min-height: 600px;
+        position: relative;
+        position: 50px;
+    }
+}
+
 .intro-trails h1 {
     padding-top: 50px;
     text-align: center;
@@ -592,6 +745,15 @@ button:focus svg {
     border-radius: 10px;
     margin-top: 250px;
     font-size: 40px;
+}
+
+@media screen and (max-width:37.5em) {
+    div.intro-trails h1 {
+        font-size: 30px;
+        width: 500px;
+        margin-top: 0px;
+        color: white;
+    }
 }
 
 
